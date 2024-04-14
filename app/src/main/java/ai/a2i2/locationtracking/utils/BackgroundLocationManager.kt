@@ -86,7 +86,7 @@ class BackgroundLocationManager(private val context: Context) {
         // PRIORITY_BALANCED_POWER_ACCURACY is more likely to use WIFI & Cell tower positioning,
         // but it also depends on many other factors (such as which sources are available) and is
         // implementation dependent.
-        priority = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY
+        priority = Priority.PRIORITY_HIGH_ACCURACY
     }
 
     private val locationUpdatePendingIntent: PendingIntent by lazy {

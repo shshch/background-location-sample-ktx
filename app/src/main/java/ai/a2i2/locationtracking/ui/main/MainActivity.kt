@@ -313,22 +313,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun locationPermissionsDenied() {
-        binding.mapImage.setImageDrawable(
-            AppCompatResources.getDrawable(
-                this,
-                R.drawable.ic_access_denied
-            )
-        )
+//        binding.mapImage.setImageDrawable(
+//            AppCompatResources.getDrawable(
+//                this,
+//                R.drawable.ic_access_denied
+//            )
+//        )
         showLocationPermissionsWarning()
     }
 
     private fun locationPermissionGranted() {
-        binding.mapImage.setImageDrawable(
-            AppCompatResources.getDrawable(
-                this,
-                R.drawable.ic_map_dark
-            )
-        )
+//        binding.mapImage.setImageDrawable(
+//            AppCompatResources.getDrawable(
+//                this,
+//                R.drawable.ic_map_dark
+//            )
+//        )
     }
 
     companion object {

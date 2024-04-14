@@ -14,13 +14,9 @@ data class LocationEntity(
     var recordedAt: Date = Date()
 ) {
     override fun toString(): String {
-        val appState = if (foreground) {
-            "in app"
-        } else {
-            "in BG"
-        }
+        val appState = if (foreground) "" else "<BG>"
 
-        return "$latitude, $longitude $appState on " +
-                "${DateFormat.getDateTimeInstance().format(recordedAt)}.\n"
+        return "${DateFormat.getDateTimeInstance().format(recordedAt)} $appState\n" + "$latitude, $longitude"
+
     }
 }
